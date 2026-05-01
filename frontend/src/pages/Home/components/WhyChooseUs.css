@@ -1,0 +1,38 @@
+.whychooseus {
+  text-align: center;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+}
+
+.whychooseus h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.feature-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  flex: 1;
+  max-width: 250px;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.feature-card .icon {
+  font-size: 32px;
+  color: #00aaff;
+  margin-bottom: 10px;
+}

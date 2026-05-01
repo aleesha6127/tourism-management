@@ -1,0 +1,101 @@
+.explore {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f8f9fa;
+}
+
+.explore h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  margin-bottom: 30px;
+}
+
+.search-bar input {
+  padding: 12px 15px;
+  width: 350px;
+  max-width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-items: center;
+}
+
+.explore-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.explore-card:hover {
+  transform: translateY(-8px);
+}
+
+.explore-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.explore-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.explore-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.explore-info .location {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.explore-info .price {
+  font-weight: bold;
+  color: #28a745;
+}
+
+.explore-info .rating {
+  font-size: 0.85rem;
+  color: #f39c12;
+}
+
+.explore-info .tag {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 10px;
+  background: #007bff;
+  color: white;
+  font-size: 0.75rem;
+  border-radius: 20px;
+}
+
+.btn-book {
+  display: block;
+  margin-top: 12px;
+  padding: 10px 15px;
+  background: #ff5733;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-book:hover {
+  background: #e74c3c;
+}

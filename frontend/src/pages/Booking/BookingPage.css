@@ -1,0 +1,108 @@
+.booking-container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.booking-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.booking-subtitle {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.booking-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.package-card {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.package-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.package-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.package-details {
+  list-style: none;
+  padding: 0;
+  color: #444;
+}
+
+.package-details li {
+  margin: 6px 0;
+}
+
+.booking-form {
+  flex: 2;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.booking-form h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  min-height: 80px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  background: linear-gradient(to right, #00c6ff, #ff7e5f);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}

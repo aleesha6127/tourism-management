@@ -1,0 +1,33 @@
+.custom-banner {
+  margin: 40px auto;
+  max-width: 1100px;
+  border-radius: 14px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.custom-inner {
+  padding: 36px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff, #ff7e5f);
+  color: white;
+}
+
+.custom-inner h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.custom-inner p {
+  margin: 0 0 18px;
+  font-size: 1rem;
+}
+
+.custom-btn {
+  background: white;
+  color: #333;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}

@@ -1,0 +1,23 @@
+.back-btn {
+  background: transparent;
+  border: none;
+  color: #0077ff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+.package-img.placeholder {
+  width: 120px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f1f1;
+  font-size: 24px;
+  color: #555;
+}

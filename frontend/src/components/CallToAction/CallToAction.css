@@ -1,0 +1,52 @@
+.cta-section {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.cta-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #f0f0f0;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.start-btn {
+  background: #ffe4b3;
+  color: #333;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  background: #ffcc80;
+}
+
+.contact-btn {
+  background: transparent;
+  border: 2px solid white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}

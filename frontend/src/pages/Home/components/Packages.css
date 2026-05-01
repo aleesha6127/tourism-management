@@ -1,0 +1,90 @@
+.packages {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.packages h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.packages p {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: #555;
+}
+
+/* Cards layout */
+.packages-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.package-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+}
+
+.package-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.package-info {
+  padding: 1.5rem;
+}
+
+.package-info h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.package-info .location {
+  font-weight: bold;
+  color: #00c6ff;
+  margin-bottom: 0.5rem;
+}
+
+.package-info .description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.package-info .details {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #00c6ff, #ff7e5f);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
