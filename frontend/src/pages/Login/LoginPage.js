@@ -21,15 +21,16 @@ const LoginPage = () => {
     e.preventDefault();
 
     if (isSignUp) {
-      // --- Sign Up Validation ---
       if (!validateUsername(form.username)) {
         alert("❌ Username should contain only alphabets (A–Z, a–z).");
         return;
       }
+
       if (!validateEmail(form.email)) {
         alert("❌ Invalid email. Must include @ and a valid domain.");
         return;
       }
+
       if (!validatePassword(form.password)) {
         alert(
           "❌ Password must be at least 8 characters, include uppercase, lowercase, number, and special character."
@@ -37,9 +38,13 @@ const LoginPage = () => {
         return;
       }
 
-      // Save user in localStorage (mock signup)
       const users = JSON.parse(localStorage.getItem("users")) || [];
-      users.push({ username: form.username, email: form.email, password: form.password });
+      users.push({
+        username: form.username,
+        email: form.email,
+        password: form.password,
+      });
+
       localStorage.setItem("users", JSON.stringify(users));
 
       alert("✅ Account created successfully! Please Sign In.");
@@ -47,22 +52,26 @@ const LoginPage = () => {
       return;
     }
 
-    // --- Sign In ---
     if (form.email === "admin@gmail.com" && form.password === "1234") {
-      localStorage.setItem("user", JSON.stringify({ role: "admin", email: form.email }));
+      localStorage.setItem(
+        "user",
+        JSON.stringify({ role: "admin", email: form.email })
+      );
       alert("✅ Admin logged in successfully!");
       navigate("/admin");
       return;
     }
 
-    // Check user login
     const users = JSON.parse(localStorage.getItem("users")) || [];
     const existingUser = users.find(
       (u) => u.email === form.email && u.password === form.password
     );
 
     if (existingUser) {
-      localStorage.setItem("user", JSON.stringify({ role: "user", email: form.email }));
+      localStorage.setItem(
+        "user",
+        JSON.stringify({ role: "user", email: form.email })
+      );
       alert("✅ User logged in successfully!");
       navigate("/");
     } else {
@@ -76,15 +85,17 @@ const LoginPage = () => {
         <h1>Welcome to WanderLust</h1>
         <p className="subtitle">Your next adventure awaits</p>
 
-        {/* Toggle */}
         <div className="toggle-buttons">
           <button
+            type="button"
             className={!isSignUp ? "active" : ""}
             onClick={() => setIsSignUp(false)}
           >
             Sign In
           </button>
+
           <button
+            type="button"
             className={isSignUp ? "active" : ""}
             onClick={() => setIsSignUp(true)}
           >
@@ -92,7 +103,6 @@ const LoginPage = () => {
           </button>
         </div>
 
-        {/* Form */}
         <form onSubmit={handleSubmit} className="login-form">
           {isSignUp && (
             <div className="input-group">
@@ -138,9 +148,15 @@ const LoginPage = () => {
         </form>
 
         <div className="footer-links">
-          {!isSignUp && <a href="#">Forgot your password?</a>}
+          {!isSignUp && (
+            <button type="button" className="forgot-link">
+              Forgot your password?
+            </button>
+          )}
           <br />
-          <a href="/" className="back-home">← Back to Home</a>
+          <a href="/" className="back-home">
+            ← Back to Home
+          </a>
         </div>
       </div>
     </div>
